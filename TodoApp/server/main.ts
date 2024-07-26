@@ -65,7 +65,7 @@ const start = async ()=>{
 
 start()
 
-const PORT = 8080
+const PORT = process.env.PORT;
 
 app.listen(PORT,()=>{
     console.log("Connected at 8080")
