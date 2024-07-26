@@ -77,6 +77,6 @@ const start = () => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 start();
-app.listen(8080, () => {
+app.listen(PORT, () => {
     console.log("Connected at 8080");
 });

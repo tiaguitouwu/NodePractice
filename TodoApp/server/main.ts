@@ -6,6 +6,7 @@ import cors from 'cors'
 
 //CONFIG PARA CORRER SERVER
 dotenv.config();
+
 const app = express()
 app.use(cors({ origin:"*", optionsSuccessStatus:200 }))
 app.use(express.urlencoded({ extended:false }))
@@ -64,7 +65,9 @@ const start = async ()=>{
 
 start()
 
-app.listen(8080,()=>{
+const PORT = 8080
+
+app.listen(PORT,()=>{
     console.log("Connected at 8080")
 })
 
